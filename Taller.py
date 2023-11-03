@@ -122,3 +122,5 @@ grupo_estudiantes = [
 #promedio de edad del curso
 for x in grupo_estudiantes:
     print()
+    
+#hola mundo
