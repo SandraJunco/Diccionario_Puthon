@@ -119,8 +119,11 @@ grupo_estudiantes = [
     }
 ]
 
-#promedio de edad del curso
-for x in grupo_estudiantes:
-    print()
-## 
+# Promedio de edad de los estudiantes del curso.
+suma_edad = 0
+for estudiante in grupo_estudiantes:
+    edad_estudiante = estudiante['edad']
+    suma_edad = suma_edad + edad_estudiante
+promedio_edad = suma_edad / len(grupo_estudiantes)
+print(f"El promedio de edad de los estudiantes del curso corresponde a: {promedio_edad}")
 
