@@ -149,3 +149,10 @@ for estudiante in grupo_estudiantes:
     if estudiante['promedio'] > mayor_promedio['promedio']:
         mayor_promedio = estudiante
 print(f"El estudiante con mayor promedio del curso es: {mayor_promedio['nombre']} {mayor_promedio['apellido']} cuyo promedio es de {mayor_promedio['promedio']}")
+
+# Estudiante con menor nivel de programación en el curso.
+menor_nivel_program=grupo_estudiantes[0]
+for estudiate in grupo_estudiantes:
+    if estudiante['nivel_programación']<menor_nivel_program['nivel_programación']:
+        menor_nivel_program = estudiante
+print(f"El estudiante con menor nivel de programación es: {menor_nivel_program['nombre']} {menor_nivel_program['nombre']} el cual corresponde a {menor_nivel_program['nivel_programación']}")
