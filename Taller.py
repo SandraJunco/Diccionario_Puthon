@@ -136,3 +136,16 @@ for estudiante in grupo_estudiantes:
 promedio_edad = suma_edad / len(grupo_estudiantes)
 print(f"El promedio de edad de los estudiantes del curso corresponde a: {promedio_edad}")
 
+# Número de estudiantes solteros del curso.
+estudiantes_solteros = 0
+for estudiante in grupo_estudiantes:
+    if estudiante['estado_civil'] == 'Soltera':
+        estudiantes_solteros = estudiantes_solteros + 1
+print(f"El número de estudiantes solteros del curso es de: {estudiantes_solteros}")
+
+# Estudiante con mayor promedio del curso.
+mayor_promedio = grupo_estudiantes[0]
+for estudiante in grupo_estudiantes:
+    if estudiante['promedio'] > mayor_promedio['promedio']:
+        mayor_promedio = estudiante
+print(f"El estudiante con mayor promedio del curso es: {mayor_promedio['nombre']} {mayor_promedio['apellido']} cuyo promedio es de {mayor_promedio['promedio']}")
