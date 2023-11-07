@@ -141,18 +141,26 @@ estudiantes_solteros = 0
 for estudiante in grupo_estudiantes:
     if estudiante['estado_civil'] == 'Soltera':
         estudiantes_solteros = estudiantes_solteros + 1
-print(f"El número de estudiantes solteros del curso es de: {estudiantes_solteros}")
+print(f"El número de estudiantes solteros del curso es: {estudiantes_solteros}")
 
 # Estudiante con mayor promedio del curso.
 mayor_promedio = grupo_estudiantes[0]
 for estudiante in grupo_estudiantes:
     if estudiante['promedio'] > mayor_promedio['promedio']:
         mayor_promedio = estudiante
-print(f"El estudiante con mayor promedio del curso es: {mayor_promedio['nombre']} {mayor_promedio['apellido']} cuyo promedio es de {mayor_promedio['promedio']}")
+print(f"El estudiante con mayor promedio del curso es: {mayor_promedio['nombre']} {mayor_promedio['apellido']} con un valor de de {mayor_promedio['promedio']}")
 
 # Estudiante con menor nivel de programación en el curso.
 menor_nivel_program=grupo_estudiantes[0]
 for estudiate in grupo_estudiantes:
     if estudiante['nivel_programación']<menor_nivel_program['nivel_programación']:
         menor_nivel_program = estudiante
-print(f"El estudiante con menor nivel de programación es: {menor_nivel_program['nombre']} {menor_nivel_program['nombre']} el cual corresponde a {menor_nivel_program['nivel_programación']}")
+print(f"El estudiante con menor nivel de programación es: {menor_nivel_program['nombre']} {menor_nivel_program['apellido']} con un valor de {menor_nivel_program['nivel_programación']}")
+
+# Número de estudiantes cuyo apellido comienza con la letra 'C'.
+apellidos_por_c = 0
+for estudiante in grupo_estudiantes:
+    if estudiante ['apellido'][0] =='C':
+        apellidos_por_c = apellidos_por_c + 1
+print(f"El número de estudiantes cuyo apellido comienzan por la letra 'C' corresponde a {apellidos_por_c}")
+    
